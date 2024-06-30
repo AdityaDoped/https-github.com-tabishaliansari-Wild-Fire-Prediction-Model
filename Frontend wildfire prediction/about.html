@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Prediction - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for hero section */
+        .hero {
+            background: white;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero .intro {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .hero .intro button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E67E22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .intro button:hover {
+            background-color: #D35400;
+        }
+
+        /* Sticky header styles */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 24px;
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #E67E22;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #D35400;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: #333;
+        }
+
+        .content-section p, .content-section ul {
+            text-align: left;
+            color: #555;
+        }
+
+        .content-section ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .contact {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: ;
+            color: back;
+            border-radius: 5px;
+        }
+
+        .contact h3 {
+            margin-top: 0;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .contact a {
+            color: #E67E22;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/WRC_Flame-Color.png') }}" alt="Wildfire Prediction Logo" class="logo">
+            <h1 class="site-title">Wildfire Prediction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('benefits') }}">Benefits</a></li>
+                <li><a href="{{ url_for('about_page') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <section class="hero">
+            <div class="intro">
+                <h2>About Us</h2>
+                <p>Learn more about our mission and values.</p>
+            </div>
+        </section> -->
+
+        <section class="content-section">
+            <h2>Team Mavericks Welcomes You!</h2>
+            <p>This repository contains the projects submitted to the Prasunethon 29 - 30 June, 2024 held by PrasuNet.</p>
+            <h3>Project Title: Wildfire Prediction Model</h3>
+            <p><strong>Domain:</strong> Artificial Intelligence</p>
+            <p><strong>Topic:</strong> AI-Based Disaster Prediction and Response System</p>
+            <h4>Problem Statement:</h4>
+            <p>Develop an efficient system to predict wildfire occurrences in advance using state-of-the-art Machine Learning, Data Science, and Artificial Intelligence techniques. This system will analyze time-series data to forecast wildfire events, enabling proactive disaster management and response.</p>
+
+            <h4>Project Overview:</h4>
+            <p>The requirement for a Wildfire Prediction Model lies deep in:</p>
+            <ul>
+                <li>Environmental Conservation</li>
+                <li>Early Detection and Response</li>
+                <li>Public Safety</li>
+                <li>National Resource Allocation</li>
+                <li>Economic Impact</li>
+                <li>Climate Change Mitigation</li>
+            </ul>
+            <p>Our project aims to develop an advanced predictive model using AI and Data Science techniques to forecast wildfire occurrences with high accuracy and reliability. By analyzing historical time-series data and environmental variables, such as temperature, humidity, and wind patterns, our model predicts when and where wildfires are likely to occur.</p>
+            <p>This proactive approach enables early detection and timely intervention, enhancing disaster preparedness and response strategies. Our team, comprised of passionate students from AISSMS IOIT, leverages expertise in AI, Data Science, and Cyber Security to address this pressing environmental and societal challenge. Through this project, we strive to contribute to the conservation of natural resources, protection of biodiversity, and enhancement of public safety measures against the increasing threat of wildfires.</p>
+
+            <h4>The project was completed in 3 main phases:</h4>
+            <ol>
+                <li>Data Analysis</li>
+                <li>Model Building</li>
+                <li>Deployment</li>
+            </ol>
+            <p>All the phases and steps taken in the project are present in the repository as modules. All the modules have detailed explanation along with the code in the jupyter notebooks.</p>
+
+            <h4>Innovative Approach: The ML Two Model Theory</h4>
+            <p>For this project, Team Mavericks decided to go wild and perform something unique and unprecedented. We have decided to use not one, but Two Machine Learning Models for this particular project.</p>
+            <p><em>“Necessity is the mother of invention.”</em></p>
+            <p>Similarly, while working on this project, we discovered the necessity for Time Series Forecasting and as well as Binary Classification for this particularly advanced dataset. Since there is no such ML model which is capable of performing both the operations independently, we put some light on the novel idea of using two different models!</p>
+            <p>The first model would be a Multiple Regression model focusing on time series forecasting, producing future values for the features. The second model will be a Logistic Regression model which will utilize the predicted values to classify the target feature as 0 or 1. Both the models shall work hand in hand through integration and pipelines.</p>
+
+            <h4>Advantages of our Wildfire Prediction Model:</h4>
+            <ul>
+                <li>Early Warning System</li>
+                <li>Environmental Protection</li>
+                <li>Data-Driven Decisions</li>
+                <li>Insurance Industry Benefits</li>
+                <li>Climate Change Adaptation</li>
+                <li>Research and Development</li>
+                <li>Integration with Existing Systems</li>
+                <li>Supporting Sustainable Practices</li>
+            </ul>
+
+            <h4>Vote of Thanks</h4>
+            <p>Thank you to everyone who visited us today for our wildfire prediction model. We extend our gratitude to our mentors, faculty, peers, and organizers of Prasunethon 2024 for their support and guidance. Your contributions have played a pivotal role in shaping our project. We look forward to continuing our efforts in AI and Data Science for impactful solutions.</p>
+
+            <div class="contact">
+                <h3>Contact the Contributors:</h3>
+                <p><strong>Aditya Pawar</strong><br>
+                <a href="mailto:adityanarsing4@gmail.com">adityanarsing4@gmail.com</a><br>
+                Data Science, Data Analysis, Deployment</p>
+
+                <p><strong>Pranav Naik</strong><br>
+                <a href="mailto:pranavnaik355@gmail.com">pranavnaik355@gmail.com</a><br>
+                Machine Learning, Web Development, Cyber Security</p>
+
+                <p><strong>Tabish Ali Ansari</strong><br>
+                <a href="mailto:tabish.ansari004@yahoo.com">tabish.ansari004@yahoo.com</a><br>
+                Artificial Intelligence, Deep Learning, Big Data</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wildfire Prediction. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

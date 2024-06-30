@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Prediction - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for hero section */
+        .hero {
+            /* background: black; Set background color to black */
+            background-image: url('HE_Wildfire_2_1920-1024x669.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover ensures the entire area is covered by the background image */
+            background-position: center; /* Center the background image */
+            background-blend-mode: overlay; /* Blends the black background with the image */
+            height: 100vh; /* Use 100vh for full viewport height, adjust as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative; /* Ensures z-index works correctly if needed */
+            padding: 20px;
+        }
+
+        .hero .intro {
+            max-width: 800px; /* Adjust max-width for content width */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds a semi-transparent overlay */
+            border-radius: 10px;
+        }
+
+        .hero .intro button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E67E22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .intro button:hover {
+            background-color: #D35400;
+        }
+
+        /* Sticky header styles */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures the header stays above other content */
+            display: flex;
+            justify-content: space-between; /* Aligns items to the left and right */
+            align-items: center; /* Vertically centers items */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px; /* Add margin for spacing */
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 24px;
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #E67E22;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #D35400;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="WRC_Flame-Color.png" alt="Wildfire Prediction Logo" class="logo">
+            <h1 class="site-title">Wildfire Prediction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="intro">
+                <h2>Welcome to Wildfire Prediction</h2>
+                <p>Our system predicts if a wildfire is present or not.</p>
+                <button onclick="window.location.href='prediction.html'">Get Prediction</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wildfire Prediction. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

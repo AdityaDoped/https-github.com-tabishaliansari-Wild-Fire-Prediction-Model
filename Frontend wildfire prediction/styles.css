@@ -1,0 +1,167 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 100px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    margin: 0 20px;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #E67E22;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D35400;
+}
+
+/* Sticky header styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    margin: 0 20px;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #E67E22;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D35400;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro, .benefits, .about, .prediction {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D35400;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .site-title {
+        text-align: center;
+        flex-grow: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
