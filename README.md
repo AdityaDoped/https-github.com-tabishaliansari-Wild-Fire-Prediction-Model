@@ -44,7 +44,7 @@ We have decided to use not one, but Two Machine Learning Models for this particu
 Similarly, while working on this project, we discovered the necessity for Time Series Forecasting and as well as Binary Classification for this particularly advanced dataset.  
 Since there is no such ML model which is capable of performing both the operations independently, we put some light on the novel idea of using two different models!  
 The first model would be a Multiple Regression model focusing on time series forecasting, producing future values for the features.  
-The second model will be a Logistic Regression model which will utilize the predicted values toclassify the target feature as 0 or 1.  
+The second model will be a Logistic Regression model which will utilize the predicted values to classify the target feature as 0 or 1.  
 Both the models shall work hand in hand through integration and pipelines.  
 
 ![VC_Deep_Learning_Hero_3200x1800](https://github.com/tabishaliansari/Prasunethon-Mavericks/assets/141923176/2a8865bc-7471-4bd3-9d33-95911d79f1a8)
