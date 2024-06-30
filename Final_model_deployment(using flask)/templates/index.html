@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Prediction - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <style>
+        /* Additional styles for hero section */
+.hero {
+    background-image: url('{{ url_for('static', filename='images/HE_Wildfire_2_1920-1024x669.jpg') }}');
+    background-size: cover; /* Cover ensures the entire area is covered by the background image */
+    background-position: center; /* Center the background image */
+    background-blend-mode: overlay; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px; 
+}
+
+    </style>
+    <header>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/WRC_Flame-Color.png') }}" alt="Wildfire Prediction Logo" class="logo">
+            <h1 class="site-title">Wildfire Prediction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="intro">
+                <h2>Welcome to Wildfire Prediction</h2>
+                <p>Our system predicts if a wildfire is present or not.</p>
+                <button onclick="window.location.href='prediction.html'">Get Prediction</button>
+            </div>
+            <!-- <div class="image-container">
+                <img src="{{ url_for('static', filename='images/HE_Wildfire_2_1920-1024x669.jpg') }}" alt="Hero Image"> <!-- Replace 'your-image.jpg' with your image filename -->
+            <!-- </div> --> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wildfire Prediction. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Prediction - Benefits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Styles for the benefits section */
+        .benefits-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: url('{{ url_for('static', filename='images/HE_Wildfire_2_1920-1024x669.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* Sticky header styles */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures the header stays above other content */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px; /* Add margin for spacing */
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 24px;
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #E67E22;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #D35400;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="WRC_Flame-Color.png" alt="Wildfire Prediction Logo" class="logo">
+            <h1 class="site-title">Wildfire Prediction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="benefits-section">
+            <!-- <h2>Benefits</h2> -->
+            <button class="benefit-button" onclick="toggleDescription('benefit1')">Early Warning System</button>
+            <div id="benefit1" class="benefit-description">
+                <p>Provides timely alerts about potential wildfires, allowing for early interventions and preparation.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit2')">Climate Change Adaptation</button>
+            <div id="benefit2" class="benefit-description">
+                <p>Contributes to climate change adaptation efforts by predicting and mitigating the impacts of increased wildfire frequency and intensity.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit3')">Economic Impact Mitigation</button>
+            <div id="benefit3" class="benefit-description">
+                <p>Helps minimize the economic impacts of wildfires on industries such as tourism, agriculture, and forestry by preventing or reducing wildfire incidents.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit4')">Community Engagement</button>
+            <div id="benefit4" class="benefit-description">
+                <p>Engages communities in proactive wildfire prevention measures through awareness and education based on model predictions.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit5')">Data-Driven Decisions</button>
+            <div id="benefit5" class="benefit-description">
+                <p>Empowers decision-makers with data-driven insights to implement more effective wildfire management strategies.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit6')">Scalability</button>
+            <div id="benefit6" class="benefit-description">
+                <p>Can be scaled to cover larger geographical areas or integrated with other predictive models for comprehensive disaster management.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit7')">Customizability</button>
+            <div id="benefit7" class="benefit-description">
+                <p>Allows for customization based on specific regional data, making it highly relevant for local authorities and stakeholders.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit8')">Integration with Existing Systems</button>
+            <div id="benefit8" class="benefit-description">
+                <p>Can be integrated with existing emergency management and GIS systems to enhance overall disaster response capabilities.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit9')">Public Awareness</button>
+            <div id="benefit9" class="benefit-description">
+                <p>Increases public awareness about the factors contributing to wildfires and promotes community-driven prevention efforts.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit10')">Supporting Sustainable Practices</button>
+            <div id="benefit10" class="benefit-description">
+                <p>Encourages sustainable land and forest management practices by highlighting areas susceptible to wildfires.</p>
+            </div>
+            
+            <button class="benefit-button" onclick="toggleDescription('benefit11')">Insurance Industry Benefits</button>
+            <div id="benefit11" class="benefit-description">
+                <p>Assists insurance companies in assessing risks and setting premiums more accurately, potentially leading to lower insurance costs for property owners.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wildfire Prediction. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            if (description.style.display === 'none' || description.style.display === '') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

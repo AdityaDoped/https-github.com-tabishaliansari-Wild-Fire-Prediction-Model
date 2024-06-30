@@ -1,0 +1,275 @@
+/* Additional styles for hero section
+.hero {
+    background-image: url('{{ url_for('static', filename='images/HE_Wildfire_2_1920-1024x669.jpg') }}'); /* Use Flask's url_for to reference static files */
+    /* background-size: cover; /* Cover ensures the entire area is covered by the background image */
+    /* background-position: center; Center the background image */
+    /* background-blend-mode: overlay; Blends the black background with the image */
+    /* height: 100vh; Use 100vh for full viewport height, adjust as needed */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Ensures z-index works correctly if needed */
+    /* padding: 20px; */
+/* } */
+
+/* Additional styles for hero section */
+
+
+.benefit-button {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: rgba(230, 126, 34, 0.9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.benefit-button:hover {
+    background-color: rgba(211, 84, 0, 0.9);
+}
+
+.benefit-description {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+.prediction-section {
+    background: transparent;
+    background-image: url('images/HE_Wildfire_2_1920-1024x669.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.prediction-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prediction-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prediction-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.prediction-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.prediction-form button:hover {
+    background-color: #D35400;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #E67E22;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D35400;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero .intro {
+    max-width: 800px; /* Adjust max-width for content width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds a semi-transparent overlay */
+    border-radius: 10px;
+    margin-right: 20px; /* Add margin to separate text from image */
+}
+
+.hero .intro button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero .intro button:hover {
+    background-color: #D35400;
+}
+
+.hero .image-container {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero .image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sticky header styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+    display: flex;
+    justify-content: space-between; /* Aligns items to the left and right */
+    align-items: center; /* Vertically centers items */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+.site-title {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #E67E22;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D35400;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
