@@ -59,6 +59,12 @@ Both the models shall work hand in hand through integration and pipelines.
 7. Integration with Existing Systems
 8. Supporting Sustainable Practices
 
+# Implementation
+> Videos uploaded to YouTube
+
+[Wildfire Prediction Model](https://www.youtube.com/watch?v=ZENFaPuS-l0)  
+[Smart City - Population Prediction](https://www.youtube.com/watch?v=eLe__Cfd_W8)
+
 # Vote of Thanks
 Thank you to everyone who visited us today for our wildfire prediction model. We extend our gratitude to our mentors, faculty, peers, and organizers of Prasunethon 2024 for their support and guidance. Your contributions have played a pivotal role in shaping our project. We look forward to continuing our efforts in AI and Data Science for impactful solutions.  
 
